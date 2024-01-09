@@ -106,3 +106,4 @@ namespace PasswordGeneratorAPI.Controllers
             return string.IsNullOrEmpty(ipAddress) ? HttpContext.Connection.RemoteIpAddress?.ToString() : ipAddress;
         }
 }
+}
