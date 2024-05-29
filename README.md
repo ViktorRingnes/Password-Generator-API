@@ -102,27 +102,3 @@ alias pushapi='cd /var/www/html/PasswordGeneratorAPI && \
                sudo dotnet publish -c Release -o /var/www/PasswordGeneratorAPI/publish && \
                sudo systemctl stop passwordgeneratorapi.service && \
                sudo systemctl start passwordgeneratorapi.service'
-
-```
-
-Test the API:
-
-Either enter this URL into your browser:
-```
-http://35.228.86.112/api/passwordgenerator/generate
-```
-
-Or you can use curl, javascript, etc, to create a GET request to the API, such as:
-#### Curl
-```bash
-http://35.228.86.112/api/passwordgenerator/generate
-```
-
-#### JavaScript
-```javascript
-fetch('http://35.228.86.112/api/passwordgenerator/generate')
-.then(response => response.text())
-.then(password => {
-console.log('Generated password:', password);
-});
-```
